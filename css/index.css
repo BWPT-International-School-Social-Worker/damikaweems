@@ -1,0 +1,300 @@
+.intro-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-alignment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin: 5% 15% 0;
+}
+.image-alignment {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 70%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Righteous', sans-serif;
+  color: #172a3a;
+}
+h1,
+h2 {
+  font-family: 'Quicksand' sans-serif;
+  color: #07b5b5;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.8rem;
+}
+.container {
+  min-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .container .head .intro {
+  display: flex;
+  align-items: center;
+}
+body .container .head .intro .name-logo {
+  width: 400px;
+}
+@media (max-width: 500px) {
+  body .container .head .intro .name-logo {
+    width: 300px;
+  }
+}
+body .container .head .intro-content .header-image {
+  height: 100%;
+}
+body .container .head .intro-content a {
+  text-decoration: none;
+  color: #07b5b5;
+}
+body .container .about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin: 5% 15% 0;
+  background-color: lightblue;
+}
+body .container .about-us h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+}
+body .container .about-us p {
+  padding: 2%;
+  text-align: center;
+}
+body .container .images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  body .container .images {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+body .container .images .middle-images {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  background-color: lightblue;
+}
+@media (max-width: 500px) {
+  body .container .images .middle-images {
+    width: 150px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+body .container .images .middle-images .image1 {
+  width: 100%;
+  height: 50%;
+}
+@media (max-width: 500px) {
+  body .container .images .middle-images .image1 {
+    width: 60%;
+  }
+}
+body .container .images .middle-images .image2 {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  body .container .images .middle-images .image2 {
+    width: 60%;
+  }
+}
+body .container .images h3 {
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  body .container .images p {
+    margin-bottom: 10%;
+  }
+}
+body .container .bottom-content a {
+  text-decoration: none;
+  width: 500px;
+}
+body .container .bottom-content h2 {
+  padding: 5%;
+}
+body .container footer {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+body .container footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 70%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body .container footer nav a {
+  text-decoration: none;
+  color: #004346;
+  padding: 5px;
+}
