@@ -5,70 +5,79 @@ body {
     .container {
 
         .head {
+        // background-color: @lighttan;
+        display: flex;
 
-        .intro {
+        .top-content {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+            width: 100%;
 
-            .name-logo {
-                width: 400px;
-
-                @media (max-width: 500px) {
-                    width: 300px;
+            .intro {
+                display: flex;
+                width: 15%;
+    
+                .name-logo {
+                    width: 200px;
+    
+                    @media (max-width: 500px) {
+                        width: 300px;
+                    }
+                }
+            }
+    
+            .intro-content{
+    
+                a {
+                    text-decoration: none;
+                    color: @header-font-color;
+                }
+    
+                .contact-us {
+                    .intro-alignment;
+                    // position: absolute;
+                    // top: 18%;
+                    // right: 8%;
+                    width: 100%;
+                    height: 45px;
+                    font-size: 2.4rem;
+                    border: 3px solid @border-color;
+                    border-radius: 18%;
+                    // background: @background-color;
+    
+                //     @media (max-width: 500px) {
+                //         top: 15%;
+                //         width: 17%;
+                //         font-size: 1.8rem;
+                //     }
+                }
+    
+            
+    
+                .title-text {
+                    .intro-alignment;
+                    // position: absolute;
+                    // top: 30%;
+                    // left: 30%;
+                    height: 100px;
+                    font-size: 4.8rem;
+                    text-decoration: none;
+                    // color: @main-border-color;
                 }
             }
         }
 
-        .intro-content{
-
-            .header-image {
-                height: 100%;
-            }
-
-            a {
-                text-decoration: none;
-                color: @header-font-color;
-            }
-
-            // .contact-us {
-            //     .intro-alignment;
-            //     position: absolute;
-            //     top: 18%;
-            //     right: 8%;
-            //     width: 12%;
-            //     height: 45px;
-            //     font-size: 2.4rem;
-            //     border: 3px solid @border-color;
-            //     border-radius: 18%;
-            //     background: @background-color;
-
-            //     @media (max-width: 500px) {
-            //         top: 15%;
-            //         width: 17%;
-            //         font-size: 1.8rem;
-            //     }
-            // }
-
         
 
-            // .title-text {
-            //     .intro-alignment;
-            //     position: absolute;
-            //     top: 30%;
-            //     left: 30%;
-            //     height: 100px;
-            //     font-size: 4.8rem;
-            //     text-decoration: none;
-            //     color: @main-border-color;
-            // }
-        }
-
             
-        }
+    }
 
         .about-us {
             .section-alignment;
-            background-color: lightblue;
+            background-color: @lighttan;
+            border: solid;
+            width: 100%;
+            margin: 0;
 
             h2 {
                 display: flex;
@@ -84,6 +93,7 @@ body {
         }
 
         .images {
+            background-color: blue;
             .image-alignment;
             margin-top: 5%;
 
@@ -95,6 +105,7 @@ body {
             
 
             .middle-images {
+                background-color: red;
                 display: flex;
                 align-content: center;
                 flex-direction: column;
@@ -142,6 +153,7 @@ body {
         }
 
         .bottom-content {
+            background-color: green;
             // .intro-alignment;
             // flex-direction: column;
             // margin-left: 11%;
@@ -163,6 +175,7 @@ body {
         }
 
         footer {
+            background-color: gray;
             margin-top: 5%;
             display: flex;
             justify-content: center;            

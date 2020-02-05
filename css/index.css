@@ -164,7 +164,7 @@ body {
 h1,
 h2 {
   font-family: 'Quicksand' sans-serif;
-  color: #07b5b5;
+  color: #f9b514;
 }
 h1 {
   font-size: 4rem;
@@ -183,24 +183,47 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-body .container .head .intro {
+body .container .head {
   display: flex;
-  align-items: center;
 }
-body .container .head .intro .name-logo {
-  width: 400px;
+body .container .head .top-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body .container .head .top-content .intro {
+  display: flex;
+  width: 15%;
+}
+body .container .head .top-content .intro .name-logo {
+  width: 200px;
 }
 @media (max-width: 500px) {
-  body .container .head .intro .name-logo {
+  body .container .head .top-content .intro .name-logo {
     width: 300px;
   }
 }
-body .container .head .intro-content .header-image {
-  height: 100%;
-}
-body .container .head .intro-content a {
+body .container .head .top-content .intro-content a {
   text-decoration: none;
-  color: #07b5b5;
+  color: #f9b514;
+}
+body .container .head .top-content .intro-content .contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  font-size: 2.4rem;
+  border: 3px solid #508991;
+  border-radius: 18%;
+}
+body .container .head .top-content .intro-content .title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  font-size: 4.8rem;
+  text-decoration: none;
 }
 body .container .about-us {
   display: flex;
@@ -209,7 +232,10 @@ body .container .about-us {
   justify-content: center;
   width: 70%;
   margin: 5% 15% 0;
-  background-color: lightblue;
+  background-color: #d2b48c;
+  border: solid;
+  width: 100%;
+  margin: 0;
 }
 body .container .about-us h2 {
   display: flex;
@@ -222,6 +248,7 @@ body .container .about-us p {
   text-align: center;
 }
 body .container .images {
+  background-color: blue;
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
@@ -233,6 +260,7 @@ body .container .images {
   }
 }
 body .container .images .middle-images {
+  background-color: red;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -272,6 +300,9 @@ body .container .images h3 {
     margin-bottom: 10%;
   }
 }
+body .container .bottom-content {
+  background-color: green;
+}
 body .container .bottom-content a {
   text-decoration: none;
   width: 500px;
@@ -280,6 +311,7 @@ body .container .bottom-content h2 {
   padding: 5%;
 }
 body .container footer {
+  background-color: gray;
   margin-top: 5%;
   display: flex;
   justify-content: center;
@@ -295,6 +327,6 @@ body .container footer nav {
 }
 body .container footer nav a {
   text-decoration: none;
-  color: #004346;
+  color: #d2b48c;
   padding: 5px;
 }
