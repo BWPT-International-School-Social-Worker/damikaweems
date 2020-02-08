@@ -1,30 +1,59 @@
 body {
 
     .container {
+        background-color: #DAF7A6;
 
         .head {
-        // background-color: @lighttan;
-        display: flex;
+            background-color: #DAF7A6;
+            display: flex;
+            padding: 2% 0;
 
         .top-content {
             display: flex;
             justify-content: space-between;
             width: 100%;
 
+            @media (max-width: 500px) {
+                flex-direction: column;
+            }
+
             .intro {
                 display: flex;
                 width: 15%;
+                
+                @media (max-width: 500px) {
+                    justify-content: center;
+                    width: 100%;
+                }
     
                 .name-logo {
                     width: 200px;
     
                     @media (max-width: 500px) {
-                        width: 300px;
+                        width: 250px;
+                    }
+
+                    @media (max-width: 800px) {
+                        width: 150px;
+                        padding-right: 1%;
                     }
                 }
             }
     
             .intro-content{
+                text-align: center;
+
+                .title-text {
+                    margin: 0 auto;
+                    padding-top: 2% 0;
+                    width: 70%;
+                }
+
+                @media (max-width: 800px) {
+                    h1 {
+                        font-size: 3.0rem;
+                    }
+                }
     
                 a {
                     text-decoration: none;
@@ -33,35 +62,24 @@ body {
     
                 .contact-us {
                     .intro-alignment;
-                    // position: absolute;
-                    // top: 18%;
-                    // right: 8%;
                     width: 100%;
                     height: 45px;
                     font-size: 2.4rem;
-                    border: 3px solid @border-color;
+                    border: 3px solid @border-font-color;
                     border-radius: 18%;
-                    // background: @background-color;
     
-                //     @media (max-width: 500px) {
-                //         top: 15%;
-                //         width: 17%;
-                //         font-size: 1.8rem;
-                //     }
+                    @media (max-width: 500px) {
+                        width: 30%;
+                        margin: 0 auto;
+                    }
                 }
-            }
-    
-            
+            }            
     
                 .title-text {
                     .intro-alignment;
-                    // position: absolute;
-                    // top: 30%;
-                    // left: 30%;
                     height: 100px;
                     font-size: 4.8rem;
                     text-decoration: none;
-                    // color: @main-border-color;
                 }
         }
     }
@@ -69,9 +87,9 @@ body {
         .about-us {
             .section-alignment;
             background-color: @lighttan;
-            // border: solid;
             width: 100%;
             margin: 0;
+            padding-bottom: 4%;
 
             h2 {
                 display: flex;
@@ -83,27 +101,22 @@ body {
             p {
                 padding: 2%;
                 text-align: center;
+                width: 70%;
             }
         }
 
-        .images {
-            // background-color: blue;
+        .mid-content {
+            background-color: #DAF7A6;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
             margin: 0;
-            // border: 3px solid;
+            padding: 5% 0;
 
             h2 {
-                margin: 10px;
+                padding-bottom: 2%;
             }
-
-            .middle-bgImages {
-                border: 3px solid darkblue;
-            }
-            .image-alignment;
-            margin-top: 5%;
 
             @media (max-width: 500px) {
                 align-items: center;
@@ -111,15 +124,20 @@ body {
             }
 
             
-            .images-layout {
+            .midContent-layout {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 width: 100%;
                 margin: 0;
 
-                .middle-images {
-                    background-color: #FF5733;
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    width: 80%;
+                }
+
+                .middle-content {
+                    background-color: @lighttan;
                     display: flex;
                     align-content: center;
                     flex-direction: column;
@@ -130,9 +148,10 @@ body {
                     border: solid tan;
     
                     @media (max-width: 500px) {
-                    width: 150px;
-                    align-items: center;
-                    margin-bottom: 10px;
+                        margin: 0 2%;
+                    // width: 150px;
+                    // align-items: center;
+                    // margin-bottom: 10px;
                     }
                     
                     h3 {
@@ -152,11 +171,9 @@ body {
             background-color: @lighttan;
             .intro-alignment;
             flex-direction: column;
-            // margin-left: 11%;
-            // margin-top: 5%;
             width: 100%;
             text-align: center;
-            // background-color: lightblue;
+            padding-bottom: 7%;
 
             a {
                 text-decoration: none;
@@ -166,6 +183,10 @@ body {
 
             h2 {
                 padding: 2%;
+            }
+
+            p {
+                width: 70%;
             }
 
         }
@@ -179,12 +200,10 @@ body {
             nav {
             .footer-alignment;
             font-size: 1.5rem;
-            text-align: center;
 
                 a {
                     text-decoration: none;
                     color: @background-color;
-                    padding: 5px;
                 }
             }
         }
