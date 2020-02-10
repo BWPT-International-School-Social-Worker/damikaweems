@@ -8,8 +8,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
-  margin: 5% 15% 0;
 }
 .footer-alignment {
   display: flex;
@@ -271,8 +269,6 @@ body .container .about-us {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
-  margin: 5% 15% 0;
   background-color: #d2b48c;
   width: 100%;
   margin: 0;
@@ -280,6 +276,7 @@ body .container .about-us {
 }
 body .container .about-us h2 {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
   padding: 2%;
@@ -291,9 +288,10 @@ body .container .about-us p {
 }
 body .container .mid-content {
   background-color: #DAF7A6;
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 5% 0;
@@ -467,9 +465,9 @@ body .main-content .topmember .members-pl p {
 }
 body .main-content .secondmembers {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   text-align: center;
   height: 700px;
 }
@@ -544,10 +542,11 @@ body .thirdmembers .members-wrI p {
   width: 95%;
 }
 body .bottommembers {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   height: 700px;
 }
@@ -570,13 +569,14 @@ body .bottommembers .members-web p {
 }
 footer {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 footer a {
   font-size: 1.6rem;
   padding: 15px;
   text-decoration: none;
-  color: #d2b48c;
+  color: #E67A07;
 }
 @media (max-width: 500px) {
   footer a {
